@@ -65,3 +65,16 @@ body{
   font-weight: 700;
   padding: 0 10px;
 }
+.nav-menu a{
+  color: white;
+}
+.nav-menu{
+  background-color: orange;
+  width: auto;
+  height: 44px;
+  display: flex;
+}
+.nav-item{
+  margin-top: 10px;
+  margin-left: 70px;
+}
