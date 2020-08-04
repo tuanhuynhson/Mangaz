@@ -2,97 +2,187 @@
   padding: 0;
   margin: 0;
 }
-.header{
+.top-bar{
+  padding: 10px 0;
+  background-color: #fbfbfb;
+}
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 1200px;
+  position: relative;
+}
+.nav-bar{
+  position: relative;
+  border: 1px solid transparent;
+  min-height: 3.25rem;
+  border-radius: 4px;
+}
+.nav-bar, .nav-barmenu, .nav-barend, .nav-barstart{
   display: flex;
+  align-items: stretch;
 }
-.left-header{
-  width: 60%;
+.main-nav .nav-bar{
+  height: 44px;
+  background-color: transparent;
+  z-index: 11;
 }
-.right-header{
-  width: 40%;
-}
-.left-header img{
-  padding-left: 100px;
-  padding-top: 10px;
-  width: 160px;
-  height: 40px;
-}
-input{
-  margin-top: 4px;
-  margin-left: 120px;
-  width: 400px;
-  height: 40px;
-  border: solid 1px #e0e0e0;
-  border-radius: 50px;
-  padding: 0 45px 0 20px;
-}
-.right-header{
-  margin-top: 25px;
-}
-.right-header a{
-  margin-right: 50px;
-  color: black;
-  font-size: 20px;
-}
-a{
-  text-decoration: none;
-}
-a:hover {
-  color: orange;
+.main-nav{
+  background-color: #f18121;
+  margin-bottom: 20px;
 }
 body{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
 }
-.login{
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.left-header, .right-header{
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.top-bar .truyenqq a{
+  background: url(http://static.truyenqq.com/template/frontend/images/logo.png) no-repeat;
+  width: 146px;
+  height: 34px;
+  display: block;
+}
+.top-bar .truyenqq{
+  text-indent: -9999px;
+}
+.span{
+  font-style: inherit;
+  font-weight: inherit;
+}
+a:visited{
+  text-decoration: none;
+}
+.container .item-search{
+  width: 420px;
+  margin-left: 80px;
+}
+.item-search{
   height: 44px;
-  width: 66px;
+  position: relative;
+}
+.item-search input[type=text]{
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  border: solid 1px #e8e8e8;
+  border-radius: 50px;
+  padding: 0 45px 0 20px;
+  color: #757575;
+}
+.item-search .submit-btn{
+  background: url(http://static.truyenqq.com/template/frontend/images/search-icon.png) no-repeat;
+    width: 32px;
+    height: 32px;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  border: none;
+}
+.right-header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.top-bar .item-link{
+  display: flex;
+  margin-right: 30px;
+}
+ul{
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.top-bar .item-link li{
+  margin-right: 20px;
+}
+.top-bar .item-link li a{
+  color: black;
+}
+a:visited{
+  text-decoration: none;
+}
+a{
+  background: 0 0;
+  text-decoration: none;
+}
+.top-bar .item-link li .download-app-icon{
+  background: url(http://static.truyenqq.com/template/frontend/images/download-app-icon.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-right: 4px;
+}
+.top-bar .item-button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 165px;
+  border-left: 1px solid #bbb;
+  padding-left: 25px;
+}
+.top-bar .item-button .login-btn{
   background-color: orange;
+  margin-right: 10px;
+}
+.top-bar .item-button button{
+  padding: 0 10px;
   border: none;
   border-radius: 5px;
-  color: white;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,.25);
+  height: 44px;
+  color: #fff;
   font-size: 12px;
   font-weight: 700;
-  padding: 0 10px;
 }
-.register{
-  height: 44px;
-  width: 66px;
-  background-color:#56ccf2;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 0 10px;
+.top-bar .item-button .register-btn{
+  background-color: #56ccf2;
 }
-.nav-menu a{
-  color: white;
+.nav-barmenu{
+  font-size: 15px;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
-.nav-menu{
-  background-color: orange;
-  width: auto;
-  height: 44px;
+.nav-barstart{
+  justify-content: flex-start;
+  margin-right: auto;
+}
+.main-nav .nav-bar .nav-barlink .nav-megabar{
+  color: #fff;
+}
+.nav-megabar{
+  padding: 0;
+}
+.nav-megabar{
+  align-items: stretch;
   display: flex;
 }
-.nav-item{
-  margin-top: 10px;
-  margin-left: 70px;
+.nav-megabar{
+  flex-grow: 0;
+  flex-shrink: 0;
 }
-.mangashow-item{
-  display: flex;
+.nav-megabar, .nav-barlink{
+  line-height: 1.5;
+  position: relative;
 }
-.manga{
-  display: flex;
-}
-.nothing1{
-  width: 15%;
-}
-.nothing2{
-  width: 15%;
-.oneitem{
-  width: 15%;
-}
-.threeitem{
-  width: 15%;
-}
-
