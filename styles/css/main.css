@@ -14,27 +14,8 @@
   max-width: 1200px;
   position: relative;
 }
-.nav-bar{
-  position: relative;
-  border: 1px solid transparent;
-  min-height: 3.25rem;
-  border-radius: 4px;
-}
-.nav-bar, .nav-barmenu, .nav-barend, .nav-barstart{
-  display: flex;
-  align-items: stretch;
-}
-.main-nav .nav-bar{
-  height: 44px;
-  background-color: transparent;
-  z-index: 11;
-}
-.main-nav{
-  background-color: #f18121;
-  margin-bottom: 20px;
-}
 body{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: sans-serif;
   color: black;
   font-size: 15px;
   font-weight: 400;
@@ -94,7 +75,7 @@ a:visited{
     height: 32px;
   position: absolute;
   top: 6px;
-  right: 10px;
+  right: -50px;
   border: none;
 }
 .right-header{
@@ -108,11 +89,8 @@ a:visited{
 }
 ul{
   list-style: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
 }
 .top-bar .item-link li{
   margin-right: 20px;
@@ -160,30 +138,33 @@ a{
 .top-bar .item-button .register-btn{
   background-color: #56ccf2;
 }
-.nav-barmenu{
-  font-size: 15px;
-  flex-grow: 1;
-  flex-shrink: 0;
+.mainnav ul{
+  width: 100%;
+  background-color: #f18121;
+  text-align: center;
 }
-.nav-barstart{
-  justify-content: flex-start;
-  margin-right: auto;
-}
-.main-nav .nav-bar .nav-barlink .nav-megabar{
-  color: #fff;
-}
-.nav-megabar{
-  padding: 0;
-}
-.nav-megabar{
-  align-items: stretch;
-  display: flex;
-}
-.nav-megabar{
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-.nav-megabar, .nav-barlink{
-  line-height: 1.5;
+.mainnav ul li{
+  display: inline-table;
+  width: 120px;
+  height: 44px;
+  line-height: 44px;
   position: relative;
+}
+.mainnav ul li a{
+  color: white;
+  display: block;
+}
+.mainnav ul li a:hover{
+  background-color: #f1f1f1;
+  color: #333;
+}
+.mainnav ul li > .bigmega{
+  display: none;
+  position: absolute;
+}
+.mainnav ul li:hover .bigmega{
+  display: flex
+}
+.table1{
+  display: block;
 }
