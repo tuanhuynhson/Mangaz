@@ -166,7 +166,6 @@ a{
 .mainnav > ul > li:hover > .hostmega{
   display: block;
 }
-
 .hostmega::before {
   opacity: 1;
   visibility: visible;
