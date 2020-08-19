@@ -217,7 +217,40 @@ body{
   height: 100px;
   display: flex;
 }
+.calendar{
+  background-color: white;
+  margin: auto;
+  width: 1170px;
+  height: 100px;
+  display: flex;
+}
 .calendar-box{
   flex: 0 0 120px;
-  background-color: #f18121;
+  background-color: rgba(241,129,33,.7);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  padding: 10px;
+  line-height: 1.5;
+  letter-spacing: -.5px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-left: 17px;
+  height: 60px;
+  font-size: 18px;
+}
+.calendar-text{
+  padding-left: 360px;
+  padding-top: 34px;
+  font-size: 20px;
+}
+.mega-manga{
+  margin: auto;
+  width: 1170px;
+  height: 1000px;
+  margin-top: 40px;
+}
+.mega-manga a{
+  font-size: 25px;
 }
