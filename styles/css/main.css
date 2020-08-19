@@ -138,33 +138,87 @@ a{
 .top-bar .item-button .register-btn{
   background-color: #56ccf2;
 }
-.mainnav ul{
+.mainnav > ul{
   width: 100%;
   background-color: #f18121;
   text-align: center;
 }
-.mainnav ul li{
+.mainnav > ul > li{
   display: inline-table;
   width: 120px;
   height: 44px;
   line-height: 44px;
   position: relative;
 }
-.mainnav ul li a{
-  color: white;
+.mainnav > ul > li > a{
+  color:white;
   display: block;
 }
-.mainnav ul li a:hover{
+.mainnav > ul > li a:hover{
   background-color: #f1f1f1;
   color: #333;
 }
-.mainnav ul li > .bigmega{
+.mainnav ul li > .hostmega{
   display: none;
   position: absolute;
 }
-.mainnav ul li:hover .bigmega{
-  display: flex
+
+.mainnav > ul > li:hover > .hostmega{
+  display: block;
+}
+
+.hostmega::before {
+  opacity: 1;
+  visibility: visible;
+  background: #FFF;
+  content: "";
+  height: 100%;
+  width: 200vw;
+  left: -100vw;
+  top: 0;
+  position: absolute;
+  /* z-index: 10; */
+}
+
+.bigmega, .bigmega * {
+  z-index: 20;
+}
+
+.mainnav ul li .bigmega{
+  display: flex;
 }
 .table1{
   display: block;
+}
+.bigmega{
+  width: 100%;
+}
+.bigmega .mega .column li {
+  width: 120px;
+  height: 38px;
+  line-height: 44px
+}
+.bigmega .mega .column li a {
+  color: #000;
+}
+.mainnav{
+  height: 55px;
+}
+table{
+  margin: auto;
+  width: 300px;
+}
+body{
+  background-color: #ebebeb;
+} 
+.calendar{
+  background-color: white;
+  margin: auto;
+  width: 1170px;
+  height: 100px;
+  display: flex;
+}
+.calendar-box{
+  flex: 0 0 120px;
+  background-color: #f18121;
 }
