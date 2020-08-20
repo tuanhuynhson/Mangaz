@@ -248,9 +248,71 @@ body{
 .mega-manga{
   margin: auto;
   width: 1170px;
-  height: 1000px;
+  height: 940px;
   margin-top: 40px;
 }
 .mega-manga a{
   font-size: 25px;
+}
+.mangaimg{
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.mangatext{
+  color: black;
+  width: 100%;
+  padding-left: 30px;
+}
+.mangacolumnfirst{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.mega-congai a{
+  font-size: 25px;
+}
+.mega-congai{
+  margin: auto;
+  width: 1170px;
+  height: 1000px;
+}
+.mega-contrai a{
+  font-size: 25px;
+}
+.mega-contrai{
+  margin: auto;
+  width: 1170px;
+  height: 700px;
+}
+.footerindex{
+  width: 1170px;
+  margin-top: 50px;
+}
+.footerindex a{
+  color: black;
+  font-size: 14px;
+  padding-right: 10px;
+}
+.footerbox{
+  background-color: white;
+  width: 129.8%;
+  height: 50px;
+  margin-left: -174px;
+}
+.footermiddle{
+  width: 1173px;
+  height: 20px;
+  margin: auto;
+}
+.footermiddle img{
+  padding-top: 9px;
+}
+.footermiddle a{
+  padding-left: 20px;
+}
+.footermiddle .appstore{
+  float: right;
+}
+.footermiddle .googleplay{
+  float: right;
 }
