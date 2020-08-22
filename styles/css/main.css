@@ -37,10 +37,11 @@ body{
   flex-shrink: 0;
 }
 .top-bar .truyenqq a{
-  background: url(http://static.truyenqq.com/template/frontend/images/logo.png) no-repeat;
-  width: 146px;
+  background: url(https://i.ibb.co/wszWMmb/Mangaz.png) no-repeat;
+  width: 170px;
   height: 34px;
   display: block;
+  margin-left: -20px;
 }
 .top-bar .truyenqq{
   text-indent: -9999px;
