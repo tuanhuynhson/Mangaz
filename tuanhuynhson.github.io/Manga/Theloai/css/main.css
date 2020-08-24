@@ -317,3 +317,6 @@ body{
 .footermiddle .googleplay{
   float: right;
 }
+.manga-item a:hover{
+  color: orange;
+}
