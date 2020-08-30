@@ -288,6 +288,7 @@ body{
 .footerindex{
   width: 1170px;
   margin-top: 50px;
+  height: 20px;
 }
 .footerindex a{
   color: black;
